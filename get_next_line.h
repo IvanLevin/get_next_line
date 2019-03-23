@@ -6,7 +6,7 @@
 /*   By: gkshleri <gkshleri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/12 12:33:16 by gkshleri          #+#    #+#             */
-/*   Updated: 2018/12/26 14:18:29 by gkshleri         ###   ########.fr       */
+/*   Updated: 2018/12/24 11:04:04 by gkshleri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,6 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include "libft/includes/libft.h"
-# include <stdio.h>
-# include <stdio.h>
-# include <fcntl.h>
 
 int		get_next_line(const int fd, char **line);
 

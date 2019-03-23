@@ -6,7 +6,7 @@
 /*   By: gkshleri <gkshleri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/12 12:36:14 by gkshleri          #+#    #+#             */
-/*   Updated: 2018/12/26 17:43:08 by gkshleri         ###   ########.fr       */
+/*   Updated: 2018/12/23 16:43:38 by gkshleri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,47 +80,3 @@ int				get_next_line(const int fd, char **line)
 		(starr[fd] = get_starr(starr, *line, fd)));
 	return (1);
 }
-
- int		main(void)
- {
- 	int		fd;
- 	int		fd2;
- 	char	*line;
- 	int		b;
-
- 	line = NULL;
- 	fd = open("/Users/gkshleri/Documents/Projects/get_next_line/large_file.txt", O_RDONLY);
- 	// fd2 = open("/Users/gkshleri/Documents/Projects/get_next_line/some_2.txt", O_RDONLY);
- 	// fd2 = open("/Users/gkshleri/Documents/Projects/get_next_line/some_2.txt", O_CREAT | O_RDWR | O_TRUNC, 0755);
- 		// b = get_next_line(-10000, &line);
- 		// printf("return: %d | %s \n", b, line);
- 		// b = get_next_line(fd2, &line);
- 		// printf("fd2 | return: %d | %s \n", b, line);
- 		// b = get_next_line(fd, &line);
- 		// printf("return: %d | %s \n", b, line);
- 		// b = get_next_line(fd2, &line);
- 		// printf("fd2 | return: %d | %s \n", b, line);
- 		// b = get_next_line(fd, &line);
- 		// printf("return: %d | %s \n", b, line);
- 		// b = get_next_line(fd2, &line);
- 		// printf("fd2 | return: %d | %s \n", b, line);
- 		// b = get_next_line(fd, &line);
- 		// printf("return: %d | %s \n", b, line);
- 		// b = get_next_line(fd2, &line);
- 		// printf("%s \n", line);
- 		// b = get_next_line(fd, &line);
- 		// printf("%s \n", line);
-
- 		while ((b = get_next_line(fd, NULL)))
- 		{
- 			// write(fd2, line, ft_strlen(line));
- 			// write(fd2, "\n", 1);
- 			printf("return %d | ", b);
- 			printf("%s\n", line);
- 			ft_strdel(&line);
- 		}
- 		printf("return %d | ", b);
- 		printf("%s\n", line);
- 	close(fd);
- 	return (0);
- }
